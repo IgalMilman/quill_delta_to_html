@@ -106,6 +106,9 @@ def quill_delta_to_html(quill_dict):
             result = result.replace(repl['htmle'] + repl['htmls'].format(''), '')
         return result.strip()
 
+    else:
+        return None
+
 
 def parse_line_attributes(attributes, old_attributes={}):
     text_beginning_of_lane = ''
